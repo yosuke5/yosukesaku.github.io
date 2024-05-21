@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介サイト</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>私の自己紹介サイトへようこそ！</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">自己紹介</a></li>
+                <li><a href="#portfolio">作品</a></li>
+                <li><a href="#blog">ブログ</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>自己紹介</h2>
+        <img src="profile.jpg" alt="プロフィール写真">
+        <p>こんにちは！私の名前は[名前]です。私は[職業]として働いており、[特技]に興味があります。</p>
+        <p>経歴: [経歴詳細]</p>
+        <p>趣味: [趣味詳細]</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>作品</h2>
+        <div class="portfolio-item">
+            <h3>作品タイトル1</h3>
+            <img src="project1.jpg" alt="作品1">
+            <p>作品の説明。</p>
+        </div>
+        <div class="portfolio-item">
+            <h3>作品タイトル2</h3>
+            <img src="project2.jpg" alt="作品2">
+            <p>作品の説明。</p>
+        </div>
+        <!-- 他の作品も同様に追加 -->
+    </section>
+
+    <section id="blog">
+        <h2>ブログ</h2>
+        <article>
+            <h3>ブログタイトル1</h3>
+            <p>ブログの内容...</p>
+            <a href="blog1.html">続きを読む</a>
+        </article>
+        <article>
+            <h3>ブログタイトル2</h3>
+            <p>ブログの内容...</p>
+            <a href="blog2.html">続きを読む</a>
+        </article>
+        <!-- 他のブログ記事も同様に追加 -->
+    </section>
+
+    <section id="contact">
+        <h2>お問い合わせ</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">名前:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">メールアドレス:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">メッセージ:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">送信</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 自己紹介サイト</p>
+    </footer>
+</body>
+</html>
